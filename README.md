@@ -27,7 +27,14 @@ All functions share the same subset of options:
 --debug, -D
 ```
 
-### Create
+### help
+
+Don't panic! Use the buildin help
+
+### explain
+Explains the data a generator returns.
+
+### create
 
 `heinzel create` is the main function of heinzelmannchen.
 It reads the config (`.heinzelrc`) and creates code for a given domain.
