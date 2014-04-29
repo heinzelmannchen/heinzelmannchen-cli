@@ -1,6 +1,8 @@
 heinzelmannchen-cli
 ===================
 
+This is the cli for the [heinzelmannchen](https://github.com/heinzelmannchen/heinzelmannchen) codegeneration tool.
+
 Usage
 -----
 
@@ -14,6 +16,7 @@ heinzel add
 heinzel search
 heinzel install
 heinzel uninstall
+heinzel update
 ```
 
 All functions share the same subset of options:
@@ -42,7 +45,7 @@ It reads the config (`.heinzelrc`) and creates code for a given domain.
 It takes a domain or a path to a domain as it's first argument.
 
 ```shell
-heinzel create [domain] # one or more domains
+heinzel create -D [domain] # one or more domains
 ```
 
 ### list
@@ -54,8 +57,16 @@ You can list template by adding the `--template` flag. The same can be done for 
 It
 
 ### search
+
+Search for templates or generators on NPM.
+
 ### install
+
+Install templates or generators on NPM.
+
 ### uninstall
+
+Uninstall templates or generators from your project.
 
 Architecture
 ------------
