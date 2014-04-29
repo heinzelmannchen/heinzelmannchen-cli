@@ -7,6 +7,7 @@ Usage
 The main functions of heinzelmannchen are:
 ```shell
 heinzel help
+heinzel explain
 heinzel create
 heinzel list
 heinzel add
@@ -39,12 +40,12 @@ heinzel create [domain] # one or more domains
 
 ### list
 `heinzel list` is used to display available templates, generators and domains.
-It has three sub functions:
-* templates
-* generators
-* domains
+You can list template by adding the `--template` flag. The same can be done for generators and templates.
 
 ### add
+`heinzel add`is used to add domains to the `.heinzelrc`.
+It
+
 ### search
 ### install
 ### uninstall
