@@ -36,3 +36,23 @@ It takes a domain or a path to a domain as it's first argument.
 ```shell
 heinzel create [domain] # one or more domains
 ```
+
+### list
+`heinzel list` is used to display available templates, generators and domains.
+It has three sub functions:
+* templates
+* generators
+* domains
+
+### add
+### search
+### install
+### uninstall
+
+Architecture
+------------
+
+Heinzelmannchen-cli uses [commander.js](https://github.com/visionmedia/commander.js) and [commander-tabtab.js](https://github.com/bencevans/commander-tabtab.js)
+for argv parsing.
+
+All functions can be used programmaticaly by using [heinzelmannchen](https://github.com/heinzelmannchen/heinzelmannchen).
