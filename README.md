@@ -21,13 +21,13 @@ heinzel update
 
 All functions share the same subset of options:
 ```shell
---generator, -G
---template, -T
---output, -O
---delimiter, -L
---config, -C
---silent, -S
---debug, -D
+--generators, -g
+--templates, -t
+--output, -o
+--delimiter, -l
+--config, -c
+--silent, -s
+--debug, -d
 ```
 
 ### help
