@@ -1,0 +1,31 @@
+{
+    "domains": {
+        "extViews": {
+            "formView": {
+                "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
+                "generator": {
+                    "name": "heinzelmannchen-gen-pg",
+                    "config": {
+                        "database": "heinzel"
+                    }
+                }
+            },
+            "output": "./foo/bar/<%= table_name %>.md"
+        }
+    },
+    "generators": {
+        "heinzelmannchen-gen-pg": {
+            "npm": "heinzelmannchen-gen-pg",
+            "config": {
+                "charset": "utf8",
+                "host": "127.0.0.1",
+                "password": "anton",
+                "user": "anton"
+            }
+        }
+    },
+    "templates": {
+        "formView": "http://yourrepo.com/formView.git#1.0.1",
+        "foobar": "http://yourrepo.com/formView.git#1.0.1"
+    }
+}

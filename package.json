@@ -1,0 +1,33 @@
+{
+    "name": "heinzelmannchen-cli",
+    "version": "0.0.0",
+    "description": "This is the cli for the heinzelmannchen codegeneration tool.",
+    "main": "lib/heinzel.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "heinzel": "bin/heinzel.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/heinzelmannchen/heinzelmannchen-cli"
+    },
+    "keywords": [
+        "cli",
+        "heinzelmannchen",
+        "codegeneration",
+        "scaffolding",
+        "template"
+    ],
+    "author": "Christoph Hermann & Sebastion Sprenger",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/heinzelmannchen/heinzelmannchen-cli/issues"
+    },
+    "homepage": "https://github.com/heinzelmannchen/heinzelmannchen-cli",
+    "dependencies": {
+        "commander": "~2.2.0",
+        "heinzelmannchen": "git://github.com/heinzelmannchen/heinzelmannchen"
+    }
+}
