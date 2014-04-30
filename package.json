@@ -29,6 +29,7 @@
   "dependencies": {
     "commander": "~2.2.0",
     "heinzelmannchen": "git://github.com/heinzelmannchen/heinzelmannchen",
+    "heinzelmannchen-gen-pg": "git://github.com/heinzelmannchen/heinzelmannchen-gen-pg",
     "commander-tabtab": "~0.1.0",
     "q": "~1.0.1",
     "winston": "~0.7.3",
