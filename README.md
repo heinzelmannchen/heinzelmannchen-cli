@@ -8,7 +8,7 @@ Usage
 
 The main functions of heinzelmannchen are:
 ```shell
-heinzel help
+heinzel [command] --help
 heinzel explain
 heinzel create
 heinzel list
@@ -19,22 +19,12 @@ heinzel uninstall
 heinzel update
 ```
 
-All functions share the same subset of options:
-```shell
---generators, -g
---templates, -t
---output, -o
---delimiter, -l
---config, -c
---silent, -s
---debug, -d
-```
-
 ### help
 
 Don't panic! Use the buildin help
 
 ### explain
+
 Explains the data a generator returns.
 
 ### create
@@ -50,7 +40,7 @@ heinzel create -D [domain] # one or more domains
 
 ### list
 `heinzel list` is used to display available templates, generators and domains.
-You can list template by adding the `--template` flag. The same can be done for generators and templates.
+You can list template by adding the `--templates` flag. The same can be done for generators and templates.
 
 ### add
 `heinzel add`is used to add domains to the `.heinzelrc`.
