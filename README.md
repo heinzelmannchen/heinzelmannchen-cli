@@ -35,8 +35,14 @@ It reads the config (`.heinzelrc`) and creates code for a given domain.
 It takes a domain or a path to a domain as it's first argument.
 
 ```shell
-heinzel create -D [domain] # one or more domains
+heinzel create <domain> [filters] # one or more domains
 ```
+
+#### filters
+
+You can pass multiple filters to heinzel.
+They follow the following pattern:
+`key=value[,value][,key=value[,value]]`
 
 ### list
 `heinzel list` is used to display available templates, generators and domains.

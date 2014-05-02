@@ -10,6 +10,15 @@
                     }
                 }
             },
+            "listView": {
+                "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
+                "generator": {
+                    "name": "heinzelmannchen-gen-pg",
+                    "config": {
+                        "database": "heinzel"
+                    }
+                }
+            },
             "output": "./foo/bar/<%= table_name %>.md"
         }
     },
