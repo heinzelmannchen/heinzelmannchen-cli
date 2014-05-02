@@ -17,7 +17,8 @@
                     "config": {
                         "database": "heinzel"
                     }
-                }
+                },
+                "output": "./foo/bar/list<%= table_name %>.md"
             },
             "output": "./foo/bar/<%= table_name %>.md"
         }
