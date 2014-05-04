@@ -8,6 +8,7 @@ Usage
 
 The main functions of heinzelmannchen are:
 ```shell
+heinzel
 heinzel [command] --help
 heinzel explain
 heinzel create
@@ -17,6 +18,7 @@ heinzel search
 heinzel install
 heinzel uninstall
 heinzel update
+heinzel init
 ```
 
 ### help
