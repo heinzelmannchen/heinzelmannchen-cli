@@ -37,6 +37,6 @@
     "underscore": "~1.6.0",
     "cli-color": "~0.3.2",
     "inquirer": "~0.4.1",
-    "inquander": "~0.5.2"
+    "inquander": "~0.5.4"
   }
 }
