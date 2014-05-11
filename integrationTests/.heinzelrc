@@ -1,6 +1,12 @@
 {
     "domains": {
         "extViews": {
+            "form": {
+                "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
+                "generator": {
+                    "name": "heinzelmannchen-gen-ask"
+                }
+            },
             "formView": {
                 "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
                 "generator": {
@@ -24,6 +30,16 @@
         }
     },
     "generators": {
+        "heinzelmannchen-gen-ask": {
+        "npm":"heinzelmannchen-gen-ask",
+                    "config": {
+                       "ask": [{
+                            "type": "input",
+                            "name": "table_name",
+                            "message": "Enter table name"
+                        }]
+                    }
+                    },
         "heinzelmannchen-gen-pg": {
             "npm": "heinzelmannchen-gen-pg",
             "config": {
