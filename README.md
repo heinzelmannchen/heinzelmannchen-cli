@@ -5,7 +5,6 @@ heinzelmannchen-cli
 
 Heinzelmannchen is a little helper for your daily work. It is used to create code from your templates.
 This module acts as a facade for the underlying heinzelmannchen functionality, exposing an easy to use promise based API.
-If you like to use Heinzelmannchen in your workflow checkout [heinzelmannchen-cli](https://github.com/heinzelmannchen/heinzelmannchen-cli).
 This is the cli for the [heinzelmannchen](https://github.com/heinzelmannchen/heinzelmannchen) codegeneration tool.
 
 Usage
