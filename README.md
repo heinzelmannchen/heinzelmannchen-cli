@@ -17,7 +17,6 @@ heinzel [command] --help
 heinzel explain
 heinzel create
 heinzel list
-heinzel add
 heinzel search
 heinzel install
 heinzel uninstall
@@ -54,10 +53,6 @@ They follow the following pattern:
 `heinzel list` is used to display available templates, generators and domains.
 You can list template by adding the `--templates` flag. The same can be done for generators and templates.
 
-### add
-`heinzel add`is used to add domains to the `.heinzelrc`.
-It
-
 ### search
 
 Search for templates or generators on NPM.
@@ -69,11 +64,5 @@ Install templates or generators on NPM.
 ### uninstall
 
 Uninstall templates or generators from your project.
-
-Architecture
-------------
-
-Heinzelmannchen-cli uses [commander.js](https://github.com/visionmedia/commander.js) and [commander-tabtab.js](https://github.com/bencevans/commander-tabtab.js)
-for argv parsing.
 
 All functions can be used programmaticaly by using [heinzelmannchen](https://github.com/heinzelmannchen/heinzelmannchen).
