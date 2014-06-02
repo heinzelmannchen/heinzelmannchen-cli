@@ -1,6 +1,15 @@
 heinzelmannchen-cli
 ===================
 
+![logo](https://raw.githubusercontent.com/heinzelmannchen/heinzelmannchen/master/Heinzelmannchen.png)
+<a href="http://promises-aplus.github.com/promises-spec">
+    <img src="http://promises-aplus.github.com/promises-spec/assets/logo-small.png"
+         align="right" valign="top" alt="Promises/A+ logo" />
+</a>
+
+Heinzelmannchen is a little helper for your daily work. It is used to create code from your templates.
+This module acts as a facade for the underlying heinzelmannchen functionality, exposing an easy to use promise based API.
+If you like to use Heinzelmannchen in your workflow checkout [heinzelmannchen-cli](https://github.com/heinzelmannchen/heinzelmannchen-cli).
 This is the cli for the [heinzelmannchen](https://github.com/heinzelmannchen/heinzelmannchen) codegeneration tool.
 
 Usage
