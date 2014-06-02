@@ -21,7 +21,7 @@
     "template"
   ],
   "author": "Christoph Hermann & Sebastion Sprenger",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/heinzelmannchen/heinzelmannchen-cli/issues"
   },
