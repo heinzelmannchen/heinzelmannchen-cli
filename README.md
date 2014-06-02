@@ -57,40 +57,34 @@ without a `=` it will be interpolated.
 You are <%= age %> // -> You are 109
 ```
 
-### Creating a domains NEEDS TRANSLATION
-Eine Domain kann in der Konfiguration von Heinzelmännchen im „.heinzelrc“ erfasst werden. In der Konfiguration werden alle Domains im Objekt domains erfasst. Eine Domain muss entweder weitere Domains enthalten oder ein Attribute template beinhalten.
+### Defining your domains
+A domain is defines a template and a generator which creates data for processing the template.
+Domains are defined in the `.heinzelrc` file and can be grouped for easier creation.
+
+The `.heinzelrc` file contains an object `domains` which contains domainsdefinitions.
+
+```json
 {
     "domains": {
-        "domain_A": {
-            "domain_Aa": {
-                "template": "myTemplate"
+        "express": {
+            "routes": {
+                "template": "route.js.tpl",
+                "output": "./backend/routes/<%= name %>.js"
+            },
+            "appjs": {
+                "template": "app.js.tpl",
+                "output": "./backend/app.js"
             }
         },
-        "domain_B": {
-            "template": "otherTemplate"
+        "angular": {
+            // angular templates...
         }
     }    
 }
-Listing 29: .heinzelrc Domains
-Eine Domain benötigt immer ein Template, Daten für das Template und einen Output Pfad. Diese Konfigurationen müssen aber nicht für jede Domainstufe deklariert werden, sie können vererbt werden. Im folgenden Beispiel wird der Outputpfad auf den jeweiligen Domains definiert, der Generator wird jedoch für alle Domains nur einmal definiert.
-{
-    "domains": {
-        "domain_A": {
-            "domain_Aa": {
-                "template": "myTemplate",
-                "output": "./dir/<%= name %>.md"
-            }
-        },
-        "domain_B": {
-            "template": "otherTemplate" ,
-            "output": "./dir/foo.bar",
-	     "delimiter": "{{ }}"
-        },
-        "generator": "pg"
-    }
-}
-Listing 30: heinzelrc Domains mit Vererbung
-Wie im Beispiel oben ersichtlich ist, kann ein Outputpfad aus Templateplatzhaltern bestehen. So können also Variablen aus dem Generator  verwendet werden.
+```
+
+NEEDS TRANSLATION
+=================
 1.8	Verwendung von Generatoren
 Es können beliebig viele Generatoren in einem Projekt verwendet werden. Heinzelmännchen bietet die Möglichkeit die NPM-Registry nach einem bestimmten Generator zu durchsuchen.
 $ heinzel search pg
