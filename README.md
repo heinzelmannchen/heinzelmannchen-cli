@@ -122,7 +122,7 @@ without a `=` it will be interpolated.
 You are <%= age %> // -> You are 109
 ```
 
-### Generators
+#### Generators
 
 Finally your templates need some data. Heinzelmännchen uses generators, which create data from a source.
 You can create your own data if you don't find one in the npm reqistry (check out [how to create a generator](https://github.com/heinzelmannchen/heinzelmannchen-generator)).
@@ -146,6 +146,36 @@ To checkout what a generator does or what datastructur it returns run the follow
 $ heinzel explain ask
 ```
 
-TODO
-====
-* how to use ask for a start
+To setup your domains to use a generator just refer to the name. Some generators need a little of configuration.
+Take [heinzelmannchen-gen-ask](https://github.com/heinzelmannchen/heinzelmannchen-gen-ask) without configuration ask doesn't know what to do.
+The ask-generator takes your config and prompts it to set some values when you create a domain.
+
+```json
+{
+    "domains": {
+        "express": {
+            "routes": {
+                "template": "express/route.js.tpl",
+                "output": "./backend/routes/<%= name %>.js",
+                "generator": {
+                    "npm": "ask",
+                    "config": {
+                        "ask": [{
+                            "type": "input",
+                            "name": "name",
+                            "message": "Enter a name for your route",
+                            "errorMessage": "Enter a valid name.",
+                            "validation": "value.length > 0"
+                        }]
+                    }
+                }
+            }
+        }
+    },
+    "generators": {
+        "ask": "heinzelmannchen-gen-ask"
+    }
+    // ... templates
+}
+```
+
