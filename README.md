@@ -179,3 +179,11 @@ The ask-generator takes your config and prompts it to set some values when you c
 }
 ```
 
+### Creating code
+
+If your `.heinzerc` is all setup, you can create code for a specific domain.
+Just run `heinzel` or `heinzel create DOMAIN` in the folder containing your `.heinzelrc`.
+
+```shell
+$ heinzel create express
+```
