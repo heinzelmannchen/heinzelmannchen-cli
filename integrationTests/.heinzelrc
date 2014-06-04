@@ -1,57 +1,66 @@
 {
-    "domains": {
-        "extViews": {
-            "form": {
-                "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
-                "generator": {
-                    "name": "heinzelmannchen-gen-ask"
-                }
-            },
-            "formView": {
-                "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
-                "generator": {
-                    "name": "heinzelmannchen-gen-pg",
-                    "config": {
-                        "database": "heinzel"
-                    }
-                }
-            },
-            "listView": {
-                "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
-                "generator": {
-                    "name": "heinzelmannchen-gen-pg",
-                    "config": {
-                        "database": "heinzel"
-                    }
-                },
-                "output": "./foo/bar/list<%= table_name %>.md"
-            },
-            "output": "./foo/bar/<%= table_name %>.md"
+  "domains": {
+    "extViews": {
+      "data": {
+        "version": "1.1.1"
+      },
+      "form": {
+        "template": "./tableTemplate.tpl",
+        "generator": {
+          "name": "heinzelmannchen-gen-ask"
         }
-    },
-    "generators": {
-        "heinzelmannchen-gen-ask": {
-        "npm":"heinzelmannchen-gen-ask",
-                    "config": {
-                       "ask": [{
-                            "type": "input",
-                            "name": "table_name",
-                            "message": "Enter table name"
-                        }]
-                    }
-                    },
-        "heinzelmannchen-gen-pg": {
-            "npm": "heinzelmannchen-gen-pg",
-            "config": {
-                "charset": "utf8",
-                "host": "127.0.0.1",
-                "password": "anton",
-                "user": "anton"
-            }
+      },
+      "formView": {
+        "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
+        "generator": {
+          "name": "heinzelmannchen-gen-pg",
+          "config": {
+            "database": "heinzel"
+          }
         }
-    },
-    "templates": {
-        "formView": "http://yourrepo.com/formView.git#1.0.1",
-        "foobar": "http://yourrepo.com/formView.git#1.0.1"
+      },
+      "listView": {
+        "template": "heinzelmannchen-template/examples/tableTemplate.tpl",
+        "generator": {
+          "name": "heinzelmannchen-gen-pg",
+          "config": {
+            "database": "heinzel"
+          }
+        },
+        "output": "./foo/bar/list<%= table_name %>.md"
+      },
+      "generator": {
+        "name": "heinzelmannchen-gen-ask"
+      },
+      "output": "./foo/bar/<%= table_name %>.md"
     }
+  },
+  "generators": {
+    "heinzelmannchen-gen-ask": {
+      "npm": "heinzelmannchen-gen-ask",
+      "config": {
+        "ask": [
+          {
+            "type": "input",
+            "name": "table_name",
+            "message": "Enter table name"
+          }
+        ]
+      }
+    },
+    "heinzelmannchen-gen-pg": {
+      "npm": "heinzelmannchen-gen-pg",
+      "config": {
+        "charset": "utf8",
+        "host": "127.0.0.1",
+        "password": "anton",
+        "user": "anton"
+      }
+    }
+  },
+  "templates": {
+    "formView": "http://yourrepo.com/formView.git#1.0.1",
+    "foobar": "http://yourrepo.com/formView.git#1.0.1",
+    "heinzelmannchen-tpl-default-config": "git+https://github.com/heinzelmannchen/heinzelmannchen-tpl-default-config.git"
+  }
 }
