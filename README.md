@@ -15,6 +15,7 @@ Usage
 * Nodejs installed (http://nodejs.org)
 
 ### Installation
+
 ```shell
 $ npm install heinzelmannchen-cli --global
 ```
