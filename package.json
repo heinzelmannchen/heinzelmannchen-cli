@@ -1,6 +1,6 @@
 {
   "name": "heinzelmannchen-cli",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This is the cli for the heinzelmannchen codegeneration tool.",
   "main": "lib/heinzel.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/heinzelmannchen/heinzelmannchen-cli",
   "dependencies": {
     "commander": "~2.2.0",
-    "heinzelmannchen": "~1.0.7",
+    "heinzelmannchen": "~1.0.8",
     "commander-tabtab": "~0.1.0",
     "q": "~1.0.1",
     "winston": "~0.7.3",
